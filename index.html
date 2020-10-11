@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="./lib/css/styles.css">
+</head>
+
+<body>
+
+	<div>
+		<header class="header">
+			  <div>
+					Patient Name:
+					<span class="banner-value" id="patient_name">DID NOT LOAD</span>
+					Gender:
+					<span class="banner-value" id="gender">DID NOT LOAD</span>
+					DOB:
+					<span class="banner-value" id="dob">DID NOT LOAD</span>
+			  </div>
+		</header>
+			
+		<header class="sub-header">Quick Analysis of Common Problems</header> 
+	</div>
+	
+
+		
+		<main class="main">
+			<div class="main-overview">
+				<div class="small-card">
+					<header class=box-header>Hypertension</header>
+					<div class=div-class>
+						<span> Sysolic Blood Pressure: </span>
+						<span id="sys">undefined</span>
+					</div>
+					<div class=div-class>
+						<span> Diatolic Blood Pressure: </span>
+						<span id="dia">undefined</span>
+					</div>
+					
+				</div>	
+				<div class="small-card">
+					<header class=box-header>Diabetes</header>
+					
+					<div class=div-class>
+						<span> Hemoglobin A1C In Blood: </span>
+						<span id="a1c">undefined</span>
+					</div>
+					<div class=div-class>
+						<span> Fasting Glucose Level in Plasma or Serum: </span>
+						<span id="fastp">undefined</span>
+					</div>
+					<div class=div-class>
+						<span> Glucose: </span>
+						<span id="glucose">undefined</span>
+					</div>
+				</div>		
+				<div class="small-card">
+					<header class=box-header>Heart Disease</header>
+					<div class=div-class>
+						<span> Total cholesterol:</span>
+						<span id="cholesterol">undefined</span>
+					</div>
+					<div class=div-class>
+						<span> LDL:</span>
+						<span id="ldl">undefined</span>
+					</div>
+					<div class=div-class>
+						<span> HDL:</span>
+						<span id="hdl">undefined</span>
+					</div>
+					<div class=div-class>
+						<span> Triglycerides:</span>
+						<span id="tri">undefined</span>
+					</div>
+				</div>					
+			</div>
+		</main> 
+	  
+
+
+
+
+  <script src='./lib/js/fhir-client.js'></script>
+  <!-- <script src="./lib/js/get-data.js"></script> -->
+
+  <!-- uncomment below script and comment above script to switch for easy local testing -->
+    <script src="./lib/js/get-data-test.js"></script> 
+</body>
+
+</html>
